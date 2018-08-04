@@ -1,4 +1,5 @@
-# Workshop de Introdução ao OpenMP
+# Laboratório de Introdução à Programação Paralela. OpenMP
+# Material desenvolvido por Clynton Tomacheski para o Workshop no Flisol
 
 Todos os exemplos foram escritos em C++. Mas é possível adaptá-los para C sem muito esforço! Use a linguagem que você tiver mais afinidade.
 
