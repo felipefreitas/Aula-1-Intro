@@ -8,10 +8,12 @@ void process_image_parallel(struct rgb *input_image,
     size_t rows,
     size_t cols)
 {
-	#pragma omp parallel for
-    for(size_t r = 0; r < rows; r++)
+    size_t r, c;
+
+    #pragma omp parallel for collapse(2) schedule(dynamic) default(none) private(r, c) shared(input_image, output_image, rows, cols)
+    for(r = 0; r < rows; r++)
     {
-        for(size_t c = 0; c < cols; c++)
+        for(c = 0; c < cols; c++)
         {
             size_t index = r * cols + c;
             struct rgb pixel = input_image[index];

@@ -49,9 +49,9 @@ int main(int argc, char *argv[])
 {
     #pragma omp parallel
     {
-        cout << "Hello World!\n";
-        return 0;
+        cout << "Hello World!\n";   
     }
+    return 0;
 }
 ```
 
